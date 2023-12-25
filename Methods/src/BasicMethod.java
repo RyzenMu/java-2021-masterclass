@@ -13,6 +13,8 @@ public class BasicMethod {
         message();
         System.out.println(add(5, 2));
         System.out.println(mul(5, 2));
+        ModuleClass.greeting();
+        ModuleClass.greeting1();
     }
     public static void message(){
         System.out.println("This is a message from outer method");
