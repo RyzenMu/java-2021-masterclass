@@ -13,5 +13,11 @@ public class Example1 {
         s2.name = "s2";
         //private int rollNo is not available outside Student class
 
+        Student.create();
+//        Student.create2() is not available - non static
+        // to get the create2(), an object must be created
+        Student s3 = new Student();
+        s3.create2();
+
     }
 }
