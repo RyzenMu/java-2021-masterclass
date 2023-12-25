@@ -19,5 +19,8 @@ public class Example1 {
         Student s3 = new Student();
         s3.create2();
 
+        StudentConstructor sc1 = new StudentConstructor("sc1");
+        StudentConstructor sc2 = new StudentConstructor(18030);
+
     }
 }
