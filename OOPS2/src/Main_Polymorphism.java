@@ -6,7 +6,9 @@ public class Main_Polymorphism {
         Car1 car2 = new Audi();
         Car1 car3 = new Mercedes();
         Car1 car4 = new Honda();
-//        Audi car5 = new Car1();
+//        Audi car5 = new Car1();false
+        //Audi car5 = new Honda();false
+        //BaseClass variable_name = new childClass
         car2.run();
         car3.run();
         car4.run();
