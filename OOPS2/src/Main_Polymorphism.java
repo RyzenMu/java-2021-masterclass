@@ -13,6 +13,10 @@ public class Main_Polymorphism {
         car3.run();
         car4.run();
         Car1.stop();
+        /// muliple inheriance is no possible in java because on overriding a
+        // mehod from 2 super classes  which one o follow
+        // which super class i should follow
+
     }
 
 }

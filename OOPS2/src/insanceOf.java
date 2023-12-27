@@ -1,0 +1,2 @@
+public class insanceOf {
+}
