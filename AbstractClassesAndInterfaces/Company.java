@@ -13,4 +13,12 @@ public class Company implements Bank{
     public void verifyYourself() {
         System.out.println("This company verified itself");
     }
+
+    @Override
+    public void putMoney() {
+        System.out.println("put money of company");
+    }
+    public String transferred(){
+        return "i did not transfer money";
+    }
 }
