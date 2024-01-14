@@ -12,4 +12,5 @@ public class CollectionFramework {
     //It represents a set of classes and interfaces.
     // it is optional.
 
+
 }
