@@ -9,11 +9,19 @@ public class FileInputStream1 {
         File file = new File("second.txt");
         try {
             fileInputStream = new FileInputStream(file);
+            // using skip method.
+            fileInputStream.skip(8);
             System.out.println((char)fileInputStream.read());
             System.out.println((char)fileInputStream.read());
             System.out.println((char)fileInputStream.read());
             System.out.println((char)fileInputStream.read());
-
+            // read entire file
+            int num ;
+            String str = "";
+            while ((num = (fileInputStream.read())) != -1){
+                str += (char) num;
+            }
+            System.out.println(str);
         }catch (FileNotFoundException e){
             System.out.println("your file cannot find");
             e.printStackTrace();
