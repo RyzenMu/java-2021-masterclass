@@ -11,6 +11,16 @@ public class Main_Game {
                 "C means your guessing number is inside the hidden number and in the wrong place");
         Random random = new Random();
         int intRan = random.nextInt(99);  //provides random number within range 1-100
-        System.out.println(intRan);
+        System.out.println("This is a Integer value " + intRan);
+        //convert integer to string
+        String svo = String.valueOf(intRan);
+        System.out.println("I converted integer to string " + svo);
+        System.out.println(svo.getClass());
+        //getting index 0 and index 1 of the string using charAt() string  method
+        char char0 = svo.charAt(0);
+        char char1 = svo.charAt(1);
+        System.out.println("The char at 0 position is : " + char0 );
+        System.out.println("The char at 1 position is : " + char1);
+
     }
 }
