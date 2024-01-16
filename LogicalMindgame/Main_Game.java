@@ -38,5 +38,10 @@ public class Main_Game {
         String userInput = scanner.nextLine();
         System.out.println("the user input is : " + userInput);
         System.out.println("The tupe of user input is : " + userInput.getClass());
+
+        //splitting user input into char0 and char1
+        char userChar0 = userInput.charAt(0);
+        char userChar1 = userInput.charAt(1);
+        System.out.println(userChar0 + "    " + userChar1);
     }
 }
