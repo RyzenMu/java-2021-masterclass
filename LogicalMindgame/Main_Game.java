@@ -43,5 +43,24 @@ public class Main_Game {
         char userChar0 = userInput.charAt(0);
         char userChar1 = userInput.charAt(1);
         System.out.println(userChar0 + "    " + userChar1);
+
+        //converting user input string to integer
+        Integer userInputI = Integer.parseInt(userInput);
+        System.out.println("The type of user input converted is : "+ userInputI.getClass());
+
+        //checking conditions
+        if (userInputI == intRan){
+            System.out.println("congratulations");
+        }
+//        if (char0 == userChar0 && char1==userChar1){
+//            System.out.println("congratulations");
+//        }
+        else if (userChar1 == char1 || userChar0 == char0) {
+            System.out.println(" 1B 0C ");
+        } else if (userChar1 == char0 && userChar0 == char1) {
+            System.out.println(" 0B 2C ");
+        } else if (userChar1 == char0 || userChar0 == char1) {
+            System.out.println(" 0B 1C ");
+        }
     }
 }
