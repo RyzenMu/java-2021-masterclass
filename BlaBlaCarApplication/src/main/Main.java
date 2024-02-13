@@ -19,7 +19,7 @@ public class Main {
         //switch case for selection of services:
         switch(intServices){
             case 1:
-                System.out.println("You have selected find ride");
+                System.out.println("finding ride");
                 serviceUtil.util1();
                 serviceUtil.util1();
                 serviceUtil.util1();
@@ -27,10 +27,10 @@ public class Main {
 
                 break;
             case 2:
-                System.out.println("You have selected offer ride");
+                System.out.println(" offering ride");
                 break;
             case 3:
-                System.out.println("You have selected About us");
+                System.out.println(" About us");
                 break;
             case 4:
                 System.out.println("You have selected Quit");
