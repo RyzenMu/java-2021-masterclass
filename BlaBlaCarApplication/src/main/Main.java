@@ -22,14 +22,12 @@ public class Main {
         //switch case for selection of services:
         switch(menu){
             case 1:
-                String nameSurName = Util.enterString("Enter your name and surname");
-                String email = Util.enterString("Enter your email");
-                String phoneNumber = Util.enterString("Enter your phone number");
-                String location = Util.enterString("Enter your location");
-//                System.out.println(nameSurName + email + phoneNumber + location);
+                String info = Util.fillInfo();
+                System.out.println(info);
                 break;
             case 2:
-                System.out.println(" offering ride");
+                info = Util.fillInfo();
+                System.out.println(info);
                 break;
             case 3:
                 System.out.println(" About us");
