@@ -1,6 +1,8 @@
 package main;
 
 import java.util.Scanner;
+
+import util.Util;
 import util.serviceUtil;
 
 public class Main {
@@ -20,12 +22,11 @@ public class Main {
         //switch case for selection of services:
         switch(menu){
             case 1:
-                System.out.println("finding ride");
-                serviceUtil.util1();
-                serviceUtil.util1();
-                serviceUtil.util1();
-                serviceUtil.util1();
-
+                String nameSurName = Util.enterString("Enter your name and surname");
+                String email = Util.enterString("Enter your email");
+                String phoneNumber = Util.enterString("Enter your phone number");
+                String location = Util.enterString("Enter your location");
+//                System.out.println(nameSurName + email + phoneNumber + location);
                 break;
             case 2:
                 System.out.println(" offering ride");
