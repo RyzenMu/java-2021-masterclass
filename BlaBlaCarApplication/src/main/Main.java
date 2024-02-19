@@ -1,5 +1,6 @@
 package main;
 
+import java.util.LinkedList;
 import java.util.Scanner;
 
 import util.Util;
@@ -24,6 +25,20 @@ public class Main {
             case 1:
                 String info = Util.fillInfo();
                 System.out.println(info);
+                System.out.println("Welcome.........");
+                String city = Util.enterString("Where do you wnat to go");
+                String toUpperCity = city.toUpperCase();
+                System.out.println("Checking Destinations for :" + toUpperCity);
+                Cities cities = new Cities();
+                LinkedList<String> list = cities.getList();
+                if (list.contains(toUpperCity)) {
+
+                }else {
+                    System.out.println("There are no available trips..\t here are the active trips");
+                    for (String i : list){
+                        System.out.println(i);
+                    }
+                }
                 break;
             case 2:
                 info = Util.fillInfo();
