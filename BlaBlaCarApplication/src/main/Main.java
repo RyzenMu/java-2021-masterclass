@@ -14,10 +14,11 @@ public class Main {
                             "3.About Us\n" +
                             "0.Quit";
         System.out.println(services);
-        int intServices = scanner.nextInt();
+        int menu = scanner.nextInt();
+
 
         //switch case for selection of services:
-        switch(intServices){
+        switch(menu){
             case 1:
                 System.out.println("finding ride");
                 serviceUtil.util1();
