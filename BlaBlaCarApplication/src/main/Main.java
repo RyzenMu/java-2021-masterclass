@@ -5,6 +5,9 @@ import java.util.Scanner;
 
 import util.Util;
 import util.serviceUtil;
+import serviceUtil.Service;
+
+import static java.awt.SystemColor.info;
 
 public class Main {
 
@@ -23,29 +26,10 @@ public class Main {
         //switch case for selection of services:
         switch(menu){
             case 1:
-                String info = Util.fillInfo();
-                System.out.println(info);
-                System.out.println("Welcome.........");
-                String city = Util.enterString("Where do you wnat to go");
-                String toUpperCity = city.toUpperCase();
-                System.out.println("Checking Destinations for :" + toUpperCity);
-                Cities cities = new Cities();
-                LinkedList<String> list = cities.getList();
-                if (list.contains(toUpperCity)) {
-                    System.out.println("There are available trips for " +
-                                    toUpperCity + "....");
-
-
-                }else {
-                    System.out.println("There are no available trips..\t here are the active trips");
-                    for (String i : list){
-                        System.out.println(i);
-                    }
-                }
+                Service.menu1();
                 break;
             case 2:
-                info = Util.fillInfo();
-                System.out.println(info);
+                Service.menu2();
                 break;
             case 3:
                 System.out.println(" About us");
