@@ -35,6 +35,7 @@ public class Main {
                     System.out.println("There are available trips for " +
                                     toUpperCity + "....");
 
+
                 }else {
                     System.out.println("There are no available trips..\t here are the active trips");
                     for (String i : list){
