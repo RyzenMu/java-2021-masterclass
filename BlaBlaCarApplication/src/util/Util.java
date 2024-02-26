@@ -27,11 +27,12 @@ public class Util {
     }
 
     public static String fillTripInfo(){
-        String location = Util.enterString("Your current location");
-        int passenger = Util.enterInteger("How many passengers will travel");
-        String requires = Util.enterString("Enter requires for example SMOKING: NO"
+        String location = enterString("Your current location");
+        int passenger = enterInteger("How many passengers will travel");
+        String time =  enterString("enter time");
+        String requires = enterString("Enter requires for example SMOKING: NO"
                 +" PET:YES, LUGGAGE: NO");
         return "Your destination from "+ location + " with " +passenger+" passenger "+
-                "with these requirements" + requires;
+                "with these requirements" + requires + " in " +time;
     }
 }
