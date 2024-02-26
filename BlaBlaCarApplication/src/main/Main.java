@@ -32,6 +32,8 @@ public class Main {
                 Cities cities = new Cities();
                 LinkedList<String> list = cities.getList();
                 if (list.contains(toUpperCity)) {
+                    System.out.println("There are available trips for " +
+                                    toUpperCity + "....");
 
                 }else {
                     System.out.println("There are no available trips..\t here are the active trips");
