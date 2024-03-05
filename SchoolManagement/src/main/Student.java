@@ -12,7 +12,12 @@ public class Student {
     public Student() {
 
     }
-
+    public Student(java.lang.String name, java.lang.String surName, int age, java.lang.String className) {
+        this.name = name;
+        this.surName = surName;
+        this.age = age;
+        this.className = className;
+    }
     public Student(java.lang.String name, java.lang.String surName, int age, java.lang.String className, int balance) {
         this.name = name;
         this.surName = surName;
