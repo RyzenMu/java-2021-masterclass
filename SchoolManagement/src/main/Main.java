@@ -19,6 +19,17 @@ public class Main {
                 MenuUtil.registerStudent();
             } else if (operation == 2) {
                 MenuUtil.printAllStudents();
+            }else if (operation == 3){
+                MenuUtil.findStudent();
+                    } else if (operation ==4) {
+               MenuUtil.updateStudent();
+            } else if (operation == 0) {
+                System.out.println("Quitting from sysyem");
+                break;
+            }else {
+                System.out.println("ionvalid operation");
+                break;
+        }
             }
         }
     }
