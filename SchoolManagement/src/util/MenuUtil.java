@@ -24,4 +24,21 @@ public class MenuUtil {
             Configuration.students[i] = st;
         }
     }
+
+    public static void findStudent(){
+        String find = InputUtil.enterString("Enter name");
+        for(int i=0; i<configuration.students.length; i++){
+            Student st = configuration.students[i];
+            if (st.getName().equalsIgnoreCase(find) ||
+                    st.getSurName().equalsIgnoreCase(find)){
+                System.out.println(st.getInfo());
+    }
+
+            public static void updateStudent(){
+                int student_place = InputUtil.enternteger("Enter studenet no");
+                System.out.println("Enter new inforamtion");
+                Student st = InputUtil.fill();
+                Configuration.students[student_place-1] = st;
+                System.out.println(st.getInfo());
+            }
 }
